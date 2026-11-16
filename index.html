@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIRAL-AI - Grow Your Business Worldwide</title>
+<style>
+body{margin:0;font-family:Arial;background:#050510;color:white;text-align:center}
+.hero{padding:50px 20px;background:linear-gradient(135deg,#7c3aed,#db2777,#f59e0b)}
+.hero h1{font-size:42px;margin:0}
+.hero p{font-size:18px;opacity:.9}
+.btn{display:inline-block;background:white;color:black;padding:15px 30px;border-radius:30px;font-weight:bold;text-decoration:none;margin-top:15px}
+.box{background:#111128;margin:15px;padding:20px;border-radius:20px;text-align:left}
+.price{background:white;color:black;padding:25px;margin:15px;border-radius:20px}
+.price h2{margin:0}
+.price b{font-size:36px}
+.chat{background:#1a1a3a;margin:15px;padding:20px;border-radius:20px;text-align:left}
+#chatBox{height:200px;overflow-y:auto;background:#050510;padding:10px;border-radius:10px;margin-bottom:10px}
+.msg{margin:8px 0;padding:8px;border-radius:10px}
+.user{background:#7c3aed;text-align:right}
+.ai{background:#222244}
+input{width:70%;padding:12px;border-radius:20px;border:none}
+button{padding:12px 18px;border-radius:20px;border:none;background:#facc15;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>VIRAL-AI 🔥</h1>
+<p>We Make Your Business Go VIRAL Worldwide.</p>
+<a class="btn" href="#aihelp">ASK AI FOR HELP →</a>
+<p>Trusted by 500+ Businesses Worldwide</p>
+</div>
+<div class="box"><h2>🚀 What We Do</h2><p>✅ Viral TikTok / Instagram / YouTube Videos<br>✅ Professional Ads & Branding<br>✅ AI Content That Sells Every Day<br>✅ Full Business Growth System</p></div>
+<div class="price"><h2>PRO</h2><b>$99</b><p>/month</p><p>✅ 8 Viral Videos<br>✅ 1 Ad Campaign</p><a class="btn" style="background:black;color:white" href="#aihelp">Choose PRO</a></div>
+<div class="price"><h2>BUSINESS ⭐</h2><b>$299</b><p>/month</p><p>✅ 20 Viral Videos<br>✅ 3 Ad Campaigns<br>✅ Branding + Logo</p><a class="btn" style="background:black;color:white" href="#aihelp">Choose BUSINESS</a></div>
+<div class="price"><h2>COMPANY</h2><b>$699</b><p>/month</p><p>✅ 50 Viral Videos<br>✅ Full Marketing Team</p><a class="btn" style="background:black;color:white" href="#aihelp">Choose COMPANY</a></div>
+<div class="price"><h2>ENTERPRISE</h2><b>$1999</b><p>/month</p><p>✅ Everything Unlimited<br>✅ Worldwide Domination</p><a class="btn" style="background:black;color:white" href="#aihelp">Choose ENTERPRISE</a></div>
+<div class="chat" id="aihelp">
+<h2 style="text-align:center">🤖 VIRAL-AI ASSISTANT - Ask Anything</h2>
+<p style="text-align:center;opacity:.7">AI inajibu - AI answers - L'IA répond - 24/7 Worldwide</p>
+<div id="chatBox"><div class="msg ai"><b>VIRAL-AI:</b> Hello! Bonjour! Habari! I am VIRAL-AI. Ask me about prices, how to start, how to go viral. I know everything! 🌍</div></div>
+<input id="q" placeholder="Andika swali hapa... Ask me anything...">
+<button onclick="ask()">ASK AI</button>
+</div>
+<script>
+function ask(){
+let input=document.getElementById('q');
+let text=input.value.toLowerCase();
+if(!text) return;
+let box=document.getElementById('chatBox');
+box.innerHTML+='<div class="msg user"><b>You:</b> '+input.value+'</div>';
+let reply="Great question! VIRAL-AI helps your business go viral worldwide. Choose PRO $99, BUSINESS $299, COMPANY $699 or ENTERPRISE $1999. We start your growth in 24 hours. Ask me about price, start, viral, or help!";
+if(text.includes('price')||text.includes('bei')||text.includes('prix')||text.includes('cost')) reply="Our prices: PRO $99/month for 8 videos, BUSINESS $299/month for 20 videos - Most Popular, COMPANY $699/month, ENTERPRISE $1999/month unlimited. Which one do you want?";
+if(text.includes('start')||text.includes('anza')||text.includes('commencer')||text.includes('how')) reply="To start: Choose a plan above, then our AI starts your videos in 24 hours. You will see results in 7-14 days. No need to talk to anyone, AI helps you!";
+if(text.includes('viral')||text.includes('tiktok')||text.includes('youtube')||text.includes('instagram')) reply="We make viral videos for TikTok, Instagram and YouTube using AI. Our AI knows what goes viral in DRC, Kenya, USA, Dubai and Europe. Your business will be seen by millions!";
+if(text.includes('help')||text.includes('msaada')||text.includes('aide')) reply="I am here to help you 24/7! I am VIRAL-AI, I know all AIs in the world. Ask me about price, start, or viral. I answer in English, Swahili and French!";
+if(text.includes('bonjour')||text.includes('salut')) reply="Bonjour! Je suis VIRAL-AI. Je peux vous aider à rendre votre business viral dans le monde entier. Nos prix: $99, $299, $699, $1999. Que voulez-vous savoir?";
+if(text.includes('habari')||text.includes('mambo')||text.includes('sasa')) reply="Habari mkuu! Mimi ni VIRAL-AI. Nitakusaidia biashara yako ijulikane duniani kote. Bei zetu ni $99, $299, $699, $1999. Unataka kujua nini?";
+box.innerHTML+='<div class="msg ai"><b>VIRAL-AI:</b> '+reply+'</div>';
+input.value='';
+box.scrollTop=box.scrollHeight;
+}
+</script>
+<div class="box" style="text-align:center"><p style="opacity:.6">© 2026 VIRAL-AI - Bunia | Worldwide - Powered by AI</p></div>
+</body>
+</html>
