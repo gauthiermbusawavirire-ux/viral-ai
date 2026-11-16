@@ -1,13 +1,17 @@
 {
+  "id": "/viral-ai/",
   "name": "VIRAL AI - Viral Assistant",
   "short_name": "VIRAL AI",
   "description": "NOT A Platform - A Viral Assistant FOR ALL Platforms Worldwide. Create viral videos for TikTok, YouTube, Instagram, Facebook and all 11 platforms.",
   "start_url": "/viral-ai/",
+  "scope": "/viral-ai/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#8b00ff",
   "orientation": "portrait",
   "lang": "en",
+  "dir": "ltr",
+  "categories": ["entertainment", "productivity", "social"],
   "icons": [
     {
       "src": "icon-512.png",
